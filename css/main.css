@@ -32,11 +32,12 @@
     border-radius: 50%;
 }
 
-.pantalla {
+#pantalla {
     width: 17em;
     height: 92%;
     background: linear-gradient(30deg, rgba(0,255,250,1) 50%, rgba(255,255,255,1) 100%);
     border-radius: 10px;
+    transition: background 2s;
 }
 
 #on-off, #up, #down {
