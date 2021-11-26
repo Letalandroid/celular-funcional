@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carcasa {
+    width: 20em;
+    height: 80%;
+    background: linear-gradient(30deg, rgba(0,0,0,1) 45%, rgba(34,34,34,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+#carcasa::before {    
+    content: '';
+    width:25px;
+    height: 25px;
+    background-color: #222;
+    position: absolute;
+    top: 30px;
+    border-radius: 50%;
+}
+
+.pantalla {
+    width: 17em;
+    height: 92%;
+    background: linear-gradient(30deg, rgba(0,255,250,1) 50%, rgba(255,255,255,1) 100%);
+    border-radius: 10px;
+}
+
+#on-off, #up, #down {
+    width: 10px;
+    height: 70px;
+    background-color: #191919;
+    position: relative;
+    top: -160px;
+    right: 26px;
+    z-index: 5;
+    border-radius: 20px;
+}
+
+#on-off:hover, #up:hover, #down:hover {
+    background-color: #555;
+}
+
+#up {
+    top: -180px;
+    left: -325px;
+    background-color: #040404;
+}
+
+#down {
+    top: -99px;
+    left: -335px;
+    background-color: #040404;
+}
